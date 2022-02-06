@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #1e1d1e;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 140px;
+  margin: 0 auto;
+  background-color: transparent;
+  z-index: 9;
+}
+
+header .container {
+  max-width: 1260px;
+  padding: 0px 50px 0px 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+header a.logo {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  margin-right: 50px;
+  color: #fff;
+}
+
+header nav ul.nav-list {
+  list-style: none;
+}
+
+header nav ul.nav-list li.nav-item {
+  display: inline-block;
+  padding: 5px 20px;
+}
+
+header nav ul.nav-list li.nav-item a.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.container .content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.container .content h1 {
+  font-size: 68px;
+  line-height: 140%;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 35px;
+}
+
+.container .content p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.container .content .input-group {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 10px 10px 25px;
+  position: relative;
+}
+
+.container .content .input-group input {
+  border: none;
+  font-size: 15px;
+  line-height: 25px;
+  width: 250px;
+}
+
+.container .content .input-group input:focus {
+  border: none;
+  outline: none;
+}
+
+.container .hero {
+  background: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  width: 80%;
+  margin-left: auto;
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .hero span.bubble {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  filter: blur(200px);
+  -webkit-filter: blur(200px);
+  animation: pulse 2s alternate infinite;
+  -webkit-animation: pulse 2s alternate infinite;
+}
+
+.container .hero span.bubble:nth-child(1) {
+  top: 0;
+  left: 0;
+  background-color: blue;
+  animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+}
+.container .hero span.bubble:nth-child(2) {
+  top: 0;
+  right: 0;
+  background-color: yellow;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
+.container .hero span.bubble:nth-child(3) {
+    bottom: 0;
+    right: 0;
+  background-color: red;
+  animation-delay: 1.6s;
+  -webkit-animation-delay: 1.6s;
+}
+.container .hero span.bubble:nth-child(4) {
+    bottom: 0;
+    left: 0;
+  background-color: green;
+  animation-delay: 2.2s;
+  -webkit-animation-delay: 2.2s;
+}
+
+.container .hero span.bubble:nth-child(5) {
+    top: 33%;
+    left: 20%;
+  background-color: purple;
+  animation-delay: 2.8s;
+  -webkit-animation-delay: 2.8s;
+}
+
+.container .hero .glide li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .hero .glide img {
+    height: auto;
+    max-width: 320px;
+    border-radius: 10px;
+}
+
+.container .hero .glide .glide__bullets {
+    bottom: -5em;
+}
+
+button.btn-action {
+    margin-left: auto;
+    background-color: #e899dc;
+    background-image: linear-gradient(315deg, #e899dc 0%, #d387ab 74%);
+    border: none;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+  }
+
+@keyframes pulse {
+  from {
+    -webkit-filter: blur(200px) opacity(0%);
+  }
+  to {
+    -webkit-filter: blur(250px) opacity(100%);
+  }
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-filter: blur(200px) opacity(0%);
+  }
+  to {
+    -webkit-filter: blur(250px) opacity(100%);
+  }
+}
